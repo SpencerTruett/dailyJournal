@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- my main css sheet in the styles folder; remember to update if you move the file -->
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Daily Journal</h1>
+
+  <form action="" class="form">
+  <fieldset class="form__journalDate">
+        <label for="journalDate">Date of Entry</label>
+        <input type="date" name="journalDate" id="journalDate">
+      </fieldset>
+    </form>
+    <form action="" class="form">
+      <fieldset class="form__journalConcepts">
+        <label for="journalConcepts">Concepts Covered</label>
+        <input type="text" name="journalConcepts" id="journalConcepts">
+      </fieldset>
+    </form>
+    <form action="" class="form">
+      <fieldset class="form__journalEntry">
+        <label for="journalEntry">Journal Entry</label>
+        <textarea name="message" rows="10" cols="30"></textarea> 
+      </fieldset>
+    </form>
+    <form action="" class="form">
+      <fieldset class="form__journalMood">
+        <label for="journalMood">Mood of the Day</label>
+        <select name="journalMood" id="journalMood">
+            <option value="prettyGood">Pretty Good</option>
+            <option value="justOk">Just Ok</option>
+            <option value="meh">Meh</option>
+            <option value="lessOk">Less Ok</option>
+            <option value="prettyBad">Pretty Bad</option>
+          </select> 
+      </fieldset>
+    </form>
+    <form action="/action_page.php">
+      <input type="submit" value="Submit">
+    </form> 
+
+  <!-- javascripts from part two of the journal thing -->
+  <script type="module" src="./scripts/main.js>
+</body>
+</html>
